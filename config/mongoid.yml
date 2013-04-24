@@ -1,0 +1,10 @@
+defaults: &defaults
+  sessions:
+    default:
+      uri: <%= ENV['MONGODB_URL'] %>
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
